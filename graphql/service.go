@@ -20,10 +20,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ethereum/go-ethereum/eth/filters"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/node"
 	"github.com/graph-gophers/graphql-go"
+	"github.com/tenderly/op-geth/eth/filters"
+	"github.com/tenderly/op-geth/internal/ethapi"
+	"github.com/tenderly/op-geth/node"
 )
 
 type handler struct {

@@ -19,7 +19,7 @@ package miner
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/tenderly/op-geth/core/types"
 )
 
 // noopChainRetriever is an implementation of headerRetriever that always

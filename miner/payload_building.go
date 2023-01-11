@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/beacon"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/beacon"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/params"
 )
 
 // BuildPayloadArgs contains the provided parameters for building payload.

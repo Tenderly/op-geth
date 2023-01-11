@@ -34,7 +34,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/op-geth/log"
 )
 
 func TestClientRequest(t *testing.T) {

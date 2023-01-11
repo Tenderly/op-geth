@@ -37,11 +37,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/google/uuid"
+	"github.com/tenderly/op-geth/accounts"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/common/math"
+	"github.com/tenderly/op-geth/crypto"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/crypto/scrypt"
 )

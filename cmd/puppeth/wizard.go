@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/log"
 	"github.com/peterh/liner"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/console/prompt"
+	"github.com/tenderly/op-geth/core"
+	"github.com/tenderly/op-geth/log"
 	"golang.org/x/term"
 )
 

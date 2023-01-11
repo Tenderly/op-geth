@@ -26,17 +26,17 @@ import (
 
 	mapset "github.com/deckarep/golang-set"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/consensus"
+	"github.com/tenderly/op-geth/consensus/misc"
+	"github.com/tenderly/op-geth/core"
+	"github.com/tenderly/op-geth/core/state"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/eth/tracers"
+	"github.com/tenderly/op-geth/event"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/params"
+	"github.com/tenderly/op-geth/trie"
 )
 
 const (

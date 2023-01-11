@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/tenderly/op-geth/common"
 )
 
 // memoryNode is all the information we know about a single cached trie node

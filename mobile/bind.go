@@ -22,11 +22,11 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/tenderly/op-geth/accounts/abi"
+	"github.com/tenderly/op-geth/accounts/abi/bind"
+	"github.com/tenderly/op-geth/accounts/keystore"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/types"
 )
 
 // Signer is an interface defining the callback when a contract requires a
