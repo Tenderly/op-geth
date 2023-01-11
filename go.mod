@@ -18,6 +18,7 @@ require (
 	github.com/docker/docker v1.6.2
 	github.com/dop251/goja v0.0.0-20220405120441-9037c2b61cbf
 	github.com/edsrzf/mmap-go v1.0.0
+	github.com/ethereum/go-ethereum v1.10.18
 	github.com/fatih/color v1.7.0
 	github.com/fjl/gencodec v0.0.0-20220412091415-8bb9e558978c
 	github.com/fjl/memsize v0.0.0-20190710130421-bcb5799ab5e5
@@ -88,7 +89,6 @@ require (
 	github.com/go-ole/go-ole v1.2.1 // indirect
 	github.com/go-sourcemap/sourcemap v2.1.3+incompatible // indirect
 	github.com/influxdata/line-protocol v0.0.0-20210311194329-9aa0e372d097 // indirect
-	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/mitchellh/pointerstructure v1.2.0 // indirect
