@@ -4,8 +4,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/params"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/op-geth/params"
 )
 
 func TestRollupGasData(t *testing.T) {

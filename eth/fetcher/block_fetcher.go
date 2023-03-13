@@ -22,14 +22,14 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/common/prque"
+	"github.com/tenderly/op-geth/consensus"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/eth/protocols/eth"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/metrics"
+	"github.com/tenderly/op-geth/trie"
 )
 
 const (

@@ -24,11 +24,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/crypto"
+	"github.com/tenderly/op-geth/params"
+	"github.com/tenderly/op-geth/rlp"
 )
 
 var (

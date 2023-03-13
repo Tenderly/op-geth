@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/tests"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/state"
+	"github.com/tenderly/op-geth/core/vm"
+	"github.com/tenderly/op-geth/eth/tracers/logger"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/tests"
 	"github.com/urfave/cli/v2"
 )
 

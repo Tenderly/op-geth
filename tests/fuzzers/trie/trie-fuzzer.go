@@ -21,8 +21,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/trie"
 )
 
 // randTest performs random trie operations.

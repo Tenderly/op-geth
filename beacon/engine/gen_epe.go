@@ -7,7 +7,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/tenderly/op-geth/common/hexutil"
 )
 
 var _ = (*executionPayloadEnvelopeMarshaling)(nil)
