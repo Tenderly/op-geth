@@ -9,7 +9,7 @@ LATEST_RELEASE=$(curl -s --fail -L \
 
 echo "Detected latest go-ethereum release as ${LATEST_RELEASE}"
 
-git remote add upstream https://github.com/ethereum/go-ethereum
+git remote add upstream https://github.com/tenderly/op-geth
 git fetch upstream > /dev/null
 
 if git branch --contains "${LATEST_RELEASE}" 2>&1 | grep -e '^[ *]*optimism$' > /dev/null

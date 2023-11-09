@@ -27,9 +27,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/rlp"
 	"github.com/stretchr/testify/require"
+	"github.com/tenderly/op-geth/ethdb"
+	"github.com/tenderly/op-geth/rlp"
 )
 
 var freezerTestTableDef = map[string]bool{"test": true}

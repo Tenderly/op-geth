@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/ethdb"
 )
 
 // Iterator is an iterator to step over all the accounts or the specific

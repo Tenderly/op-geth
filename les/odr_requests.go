@@ -21,16 +21,16 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/crypto"
+	"github.com/tenderly/op-geth/ethdb"
+	"github.com/tenderly/op-geth/light"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/rlp"
+	"github.com/tenderly/op-geth/trie"
+	"github.com/tenderly/op-geth/trie/trienode"
 )
 
 var (

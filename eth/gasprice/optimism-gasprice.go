@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/rpc"
 )
 
 // SuggestOptimismPriorityFee returns a max priority fee value that can be used such that newly

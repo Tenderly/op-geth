@@ -1,11 +1,11 @@
 title: "op-geth - go-ethereum fork diff overview"
 footer: |
-  Fork-diff overview of [`op-geth`](https://github.com/ethereum-optimism/op-geth), a fork of [`go-ethereum`](https://github.com/ethereum/go-ethereum).
+  Fork-diff overview of [`op-geth`](https://github.com/ethereum-optimism/op-geth), a fork of [`go-ethereum`](https://github.com/tenderly/op-geth).
   and execution-engine of the [OP-stack](https://github.com/ethereum-optimism/optimism).
 base:
   name: go-ethereum
-  url: https://github.com/ethereum/go-ethereum
-  hash: 3f907d6a6f6de09cff1360ed529126765939851d  # v1.13.4
+  url: https://github.com/tenderly/op-geth
+  hash: 3f907d6a6f6de09cff1360ed529126765939851d # v1.13.4
 fork:
   name: op-geth
   url: https://github.com/ethereum-optimism/op-geth
@@ -14,7 +14,7 @@ def:
   title: "op-geth"
   description: |
     This is an overview of the changes in [`op-geth`](https://github.com/ethereum-optimism/op-geth),
-    a fork of [`go-ethereum`](https://github.com/ethereum/go-ethereum), part of the OP-stack.
+    a fork of [`go-ethereum`](https://github.com/tenderly/op-geth), part of the OP-stack.
 
     The OP-stack architecture is modular, following the Consensus/Execution split of post-Merge Ethereum L1:
 

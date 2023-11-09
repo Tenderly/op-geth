@@ -26,12 +26,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/forkid"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core"
+	"github.com/tenderly/op-geth/core/forkid"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/params"
+	"github.com/tenderly/op-geth/rlp"
 )
 
 type Chain struct {

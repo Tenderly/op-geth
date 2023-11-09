@@ -20,8 +20,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/common/prque"
+	"github.com/tenderly/op-geth/common/mclock"
+	"github.com/tenderly/op-geth/common/prque"
 	"golang.org/x/exp/slices"
 )
 

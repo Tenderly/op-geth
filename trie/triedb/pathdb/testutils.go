@@ -20,11 +20,11 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/trie/trienode"
-	"github.com/ethereum/go-ethereum/trie/triestate"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/crypto"
+	"github.com/tenderly/op-geth/trie/trienode"
+	"github.com/tenderly/op-geth/trie/triestate"
 	"golang.org/x/exp/slices"
 )
 
