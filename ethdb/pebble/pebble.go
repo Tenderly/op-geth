@@ -133,7 +133,14 @@ func (l panicLogger) Fatalf(format string, args ...interface{}) {
 
 // New returns a wrapped pebble DB object. The namespace is the prefix that the
 // metrics reporting should use for surfacing internal stats.
-func New(file string, cache int, handles int, namespace string, readonly bool, ephemeral bool) (*Database, error) {
+func New(
+	file string,
+	cache int,
+	handles int,
+	namespace string,
+	readonly bool,
+	ephemeral bool,
+) (*Database, error) {
 	// Ensure we have some minimal caching and file guarantees
 	if cache < minCache {
 		cache = minCache
@@ -142,7 +149,13 @@ func New(file string, cache int, handles int, namespace string, readonly bool, e
 		handles = minHandles
 	}
 	logger := log.New("database", file)
-	logger.Info("Allocated cache and file handles", "cache", common.StorageSize(cache*1024*1024), "handles", handles)
+	logger.Info(
+		"Allocated cache and file handles",
+		"cache",
+		common.StorageSize(cache*1024*1024),
+		"handles",
+		handles,
+	)
 
 	// The max memtable size is limited by the uint32 offsets stored in
 	// internal/arenaskl.node, DeferredBatchOp, and flushableBatchEntry.
@@ -178,7 +191,7 @@ func New(file string, cache int, handles int, namespace string, readonly bool, e
 
 		// The size of memory table(as well as the write buffer).
 		// Note, there may have more than two memory tables in the system.
-		MemTableSize: memTableSize,
+		MemTableSize: uint64(memTableSize),
 
 		// MemTableStopWritesThreshold places a hard limit on the size
 		// of the existent MemTables(including the frozen one).
@@ -506,7 +519,11 @@ func (d *Database) meter(refresh time.Duration, namespace string) {
 			d.diskWriteMeter.Mark(nWrites[i%2] - nWrites[(i-1)%2])
 		}
 		// See https://github.com/cockroachdb/pebble/pull/1628#pullrequestreview-1026664054
-		manuallyAllocated := stats.BlockCache.Size + int64(stats.MemTable.Size) + int64(stats.MemTable.ZombieSize)
+		manuallyAllocated := stats.BlockCache.Size + int64(
+			stats.MemTable.Size,
+		) + int64(
+			stats.MemTable.ZombieSize,
+		)
 		d.manualMemAllocGauge.Update(manuallyAllocated)
 		d.memCompGauge.Update(stats.Flush.Count)
 		d.nonlevel0CompGauge.Update(nonLevel0CompCount)
@@ -516,7 +533,10 @@ func (d *Database) meter(refresh time.Duration, namespace string) {
 		for i, level := range stats.Levels {
 			// Append metrics for additional layers
 			if i >= len(d.levelsGauge) {
-				d.levelsGauge = append(d.levelsGauge, metrics.NewRegisteredGauge(namespace+fmt.Sprintf("tables/level%v", i), nil))
+				d.levelsGauge = append(
+					d.levelsGauge,
+					metrics.NewRegisteredGauge(namespace+fmt.Sprintf("tables/level%v", i), nil),
+				)
 			}
 			d.levelsGauge[i].Update(level.NumFiles)
 		}
@@ -608,10 +628,13 @@ type pebbleIterator struct {
 // of database content with a particular key prefix, starting at a particular
 // initial key (or after, if it does not exist).
 func (d *Database) NewIterator(prefix []byte, start []byte) ethdb.Iterator {
-	iter := d.db.NewIter(&pebble.IterOptions{
+	iter, err := d.db.NewIter(&pebble.IterOptions{
 		LowerBound: append(prefix, start...),
 		UpperBound: upperBound(prefix),
 	})
+	if err != nil {
+		panic(err)
+	}
 	iter.First()
 	return &pebbleIterator{iter: iter, moved: true}
 }
