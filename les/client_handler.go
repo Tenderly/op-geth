@@ -20,13 +20,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/core/forkid"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/common/mclock"
+	"github.com/tenderly/op-geth/core/forkid"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/light"
+	"github.com/tenderly/op-geth/p2p"
+	"github.com/tenderly/op-geth/trie/trienode"
 )
 
 // clientHandler is responsible for receiving and processing all incoming server

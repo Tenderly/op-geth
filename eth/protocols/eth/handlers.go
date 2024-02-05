@@ -20,12 +20,12 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/rlp"
+	"github.com/tenderly/op-geth/trie"
 )
 
 func handleGetBlockHeaders(backend Backend, msg Decoder, peer *Peer) error {

@@ -25,12 +25,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/beacon/engine"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/tenderly/op-geth/beacon/engine"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/log"
+	"github.com/tenderly/op-geth/params"
+	"github.com/tenderly/op-geth/rlp"
 )
 
 // BuildPayloadArgs contains the provided parameters for building payload.

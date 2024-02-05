@@ -19,7 +19,7 @@ package snap
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/eth/protocols/snap"
+	"github.com/tenderly/op-geth/eth/protocols/snap"
 )
 
 func FuzzARange(f *testing.F) {
