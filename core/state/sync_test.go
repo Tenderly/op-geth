@@ -20,17 +20,17 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/triedb"
-	"github.com/ethereum/go-ethereum/triedb/hashdb"
-	"github.com/ethereum/go-ethereum/triedb/pathdb"
 	"github.com/holiman/uint256"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/crypto"
+	"github.com/tenderly/op-geth/ethdb"
+	"github.com/tenderly/op-geth/rlp"
+	"github.com/tenderly/op-geth/trie"
+	"github.com/tenderly/op-geth/triedb"
+	"github.com/tenderly/op-geth/triedb/hashdb"
+	"github.com/tenderly/op-geth/triedb/pathdb"
 )
 
 // testAccount is the data associated with an account used by the state tests.

@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/tenderly/op-geth"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/types"
 )
 
 var (

@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/ethdb"
 )
 
 type tableSize struct {

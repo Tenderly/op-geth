@@ -20,10 +20,10 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/trie/trienode"
 )
 
 var (

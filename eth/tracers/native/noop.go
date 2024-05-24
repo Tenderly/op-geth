@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/vm"
+	"github.com/tenderly/op-geth/eth/tracers"
 )
 
 func init() {

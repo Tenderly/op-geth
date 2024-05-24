@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/vm"
 )
 
 // Context contains some contextual infos for a transaction execution that is not

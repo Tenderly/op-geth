@@ -24,14 +24,14 @@ import (
 	"math/rand"
 	"reflect"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth/protocols/snap"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/trie"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/state"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/crypto"
+	"github.com/tenderly/op-geth/eth/protocols/snap"
+	"github.com/tenderly/op-geth/internal/utesting"
+	"github.com/tenderly/op-geth/trie"
+	"github.com/tenderly/op-geth/trie/trienode"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -1,10 +1,10 @@
 title: "op-geth - go-ethereum fork diff overview"
 footer: |
-  Fork-diff overview of [`op-geth`](https://github.com/ethereum-optimism/op-geth), a fork of [`go-ethereum`](https://github.com/ethereum/go-ethereum).
+  Fork-diff overview of [`op-geth`](https://github.com/ethereum-optimism/op-geth), a fork of [`go-ethereum`](https://github.com/tenderly/op-geth).
   and execution-engine of the [OP-stack](https://github.com/ethereum-optimism/optimism).
 base:
   name: go-ethereum
-  url: https://github.com/ethereum/go-ethereum
+  url: https://github.com/tenderly/op-geth
   hash: c5ba367eb6232e3eddd7d6226bfd374449c63164 # v1.13.15
 fork:
   name: op-geth
@@ -14,7 +14,7 @@ def:
   title: "op-geth"
   description: |
     This is an overview of the changes in [`op-geth`](https://github.com/ethereum-optimism/op-geth),
-    a fork of [`go-ethereum`](https://github.com/ethereum/go-ethereum), part of the OP-stack.
+    a fork of [`go-ethereum`](https://github.com/tenderly/op-geth), part of the OP-stack.
 
     The OP-stack architecture is modular, following the Consensus/Execution split of post-Merge Ethereum L1:
 
@@ -256,7 +256,7 @@ def:
       description: Extend Ledger wallet support for newer devices on Macos
       sub:
         - title: Fix Ledger discoverability
-          # upstream PR: https://github.com/ethereum/go-ethereum/pull/28863/
+          # upstream PR: https://github.com/tenderly/op-geth/pull/28863/
           globs:
             - "accounts/usbwallet/hub.go"
     - title: "Testing"
