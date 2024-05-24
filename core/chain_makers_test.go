@@ -23,15 +23,15 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/beacon"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/triedb"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/consensus/beacon"
+	"github.com/tenderly/op-geth/consensus/ethash"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/core/vm"
+	"github.com/tenderly/op-geth/crypto"
+	"github.com/tenderly/op-geth/params"
+	"github.com/tenderly/op-geth/triedb"
 )
 
 func TestGeneratePOSChain(t *testing.T) {

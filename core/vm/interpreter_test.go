@@ -20,13 +20,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
 	"github.com/holiman/uint256"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/common/math"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/core/state"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/params"
 )
 
 var loopInterruptTests = []string{

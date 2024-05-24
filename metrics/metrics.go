@@ -14,7 +14,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/tenderly/op-geth/log"
 )
 
 // Enabled is checked by the constructor functions for all of the

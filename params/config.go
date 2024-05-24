@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params/forks"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/params/forks"
 )
 
 // Genesis hashes to enforce below configs on.

@@ -20,17 +20,17 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/state/snapshot"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/triedb"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/consensus"
+	"github.com/tenderly/op-geth/core/rawdb"
+	"github.com/tenderly/op-geth/core/state"
+	"github.com/tenderly/op-geth/core/state/snapshot"
+	"github.com/tenderly/op-geth/core/types"
+	"github.com/tenderly/op-geth/core/vm"
+	"github.com/tenderly/op-geth/event"
+	"github.com/tenderly/op-geth/params"
+	"github.com/tenderly/op-geth/rlp"
+	"github.com/tenderly/op-geth/triedb"
 )
 
 // CurrentHeader retrieves the current head header of the canonical chain. The

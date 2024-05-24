@@ -25,10 +25,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/txpool"
-	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/holiman/uint256"
+	"github.com/tenderly/op-geth/common"
+	"github.com/tenderly/op-geth/core/txpool"
+	"github.com/tenderly/op-geth/core/types"
 	"golang.org/x/exp/slices"
 )
 
